@@ -12,13 +12,13 @@ use Illuminate\Support\Facades\DB;
 class TransactoinsController extends Controller
 {
 
-    public function mountlyOmzet(Request $request)
+    public function monthlyOmzet(Request $request)
     {
         $year_month = $request->query('my') ?? '2021-11';
         $data = (new Transactions)->omzetPerDay($year_month);
 
         // convert array to collection with pagination
-        $per_page = 10;
+        $per_page = 30;
         $results = (new Collection($data['omzet']))->paginate($per_page);
 
         return response()->json([
@@ -27,13 +27,13 @@ class TransactoinsController extends Controller
         ], 200);
     }
 
-    public function mountlyOmzetOutlet(Request $request)
+    public function monthlyOmzetOutlet(Request $request)
     {
         $year_month = $request->query('my') ?? '2021-11';
         $data = (new Transactions)->omzetPerDayOutlet($year_month);
 
         // convert array to collection with pagination
-        $per_page = 10;
+        $per_page = 30;
         $results = (new Collection($data['omzet']))->paginate($per_page);
 
         return response()->json([

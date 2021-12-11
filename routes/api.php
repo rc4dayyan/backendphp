@@ -20,6 +20,6 @@ use App\Http\Controllers\UserController;
 Route::post('register', [UserController::class, 'register']);
 Route::post('login', [UserController::class, 'login']);
 
-Route::get('mountly-omzet', [TransactoinsController::class, 'mountlyOmzet'])->middleware('jwt.verify');
-Route::get('mountly-omzet-outlet', [TransactoinsController::class, 'mountlyOmzetOutlet'])->middleware('jwt.verify');
+Route::get('monthly-omzet', [TransactoinsController::class, 'monthlyOmzet'])->middleware('jwt.verify');
+Route::get('monthly-omzet-outlet', [TransactoinsController::class, 'monthlyOmzetOutlet'])->middleware('jwt.verify');
 Route::get('user', [UserController::class, 'getAuthenticatedUser'])->middleware('jwt.verify');
