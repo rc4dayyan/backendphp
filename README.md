@@ -7,11 +7,11 @@
 4. Setup Environment variable file, Run `cp .env.example .env`<br/>
 5. Update ".env" file to suit your needs "DB_DATABASE, DB_USERNAME, DB_PASSWORD"<br/>
 6. Install Depedency, Run `composer install`<br/>
-7. Migrate and Seed, Run `php artisan migrate`<br/>
-8. Passport install, Run `php artisan passport:install`<br/>
+7. Set Jwt secret, Run `php artisan jwt:secret`<br/>
+8. Migrate and Seed, Run `php artisan migrate`<br/>
 9. Set APP_KEY, Run `php artisan key:generate`<br/>
-9. Run on local dev server, Run `php artisan serve`<br/>
-10. Open browser `http://localhost:8000`<br/>
+10. Run on local dev server, Run `php artisan serve`<br/>
+11. Open browser `http://localhost:8000`<br/>
 
 ### Usage
 1. Login process, <br/>
