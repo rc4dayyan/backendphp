@@ -22,7 +22,7 @@
 
 2. Get Mountly Omzet Per merchant and per day,<br/>
     A. Request URL = http://localhost:8000/api/monthly-omzet<br/>
-        - you can add optional params example: `my=2021-11&page=1`
+        - you can add optional params example: `my=2021-11&page=1`<br/>
     B. Method = GET<br/>
     C. Header params: <br/>
         - name = authorization<br/>
@@ -30,7 +30,7 @@
 
 3. Get Mountly Omzet Per Outlet and per day,<br/>
     A. Request URL = http://localhost:8000/api/monthly-omzet<br/>
-        - you can add optional params example: `my=2021-11&page=1`
+        - you can add optional params example: `my=2021-11&page=1`<br/>
     B. Method = GET<br/>
     C. Header params: <br/>
         - name = authorization<br/>
