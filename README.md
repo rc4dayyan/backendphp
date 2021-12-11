@@ -29,7 +29,7 @@
         - value = Bearer $access_token<br/>
 
 3. Get Mountly Omzet Per Outlet and per day,<br/>
-    A. Request URL = http://localhost:8000/api/monthly-omzet<br/>
+    A. Request URL = http://localhost:8000/api/monthly-omzet-outlet<br/>
         - you can add optional params example: `my=2021-11&page=1`<br/>
     B. Method = GET<br/>
     C. Header params: <br/>
